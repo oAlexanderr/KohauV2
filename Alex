@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Codes = Instance.new("ImageLabel")
 local Banner1 = Instance.new("ImageLabel")
 local TextLabel1 = Instance.new("TextLabel")
@@ -20,27 +15,27 @@ local TextBox = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
 local OptionsGui = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local OptionsScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayout = Instance.new("UIListLayout")
-local InventoryEmpty = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
 local UICorner_5 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local MinigameSkip = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local NoUniform = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local RemoveAd = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local TextLabel_5 = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
 local DraggableUi = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local InventoryEmpty = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local MinigameSkip = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local NoUniform = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local RemoveAd = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
 local TopSkip = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local TextLabel_7 = Instance.new("TextLabel")
 local UICorner_11 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
 local TakeOutGui = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
 local DiningInGui = Instance.new("Frame")
@@ -257,114 +252,22 @@ OptionsGui.Size = UDim2.new(1, 0, 1, 0)
 UICorner_4.CornerRadius = UDim.new(0.0500000007, 1)
 UICorner_4.Parent = OptionsGui
 
-OptionsScrollingFrame.Name = "OptionsScrollingFrame"
-OptionsScrollingFrame.Parent = OptionsGui
-OptionsScrollingFrame.Active = true
-OptionsScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-OptionsScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OptionsScrollingFrame.BackgroundTransparency = 1.000
-OptionsScrollingFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-OptionsScrollingFrame.Size = UDim2.new(0, 219, 0, 164)
+ScrollingFrame.Parent = OptionsGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Size = UDim2.new(0, 219, 0, 164)
 
-UIListLayout.Parent = OptionsScrollingFrame
+UICorner_5.CornerRadius = UDim.new(0.0500000007, 1)
+UICorner_5.Parent = ScrollingFrame
+
+UIListLayout.Parent = ScrollingFrame
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0.0199999996, 0)
 
-InventoryEmpty.Name = "InventoryEmpty"
-InventoryEmpty.Parent = OptionsScrollingFrame
-InventoryEmpty.AnchorPoint = Vector2.new(0.5, 0)
-InventoryEmpty.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-InventoryEmpty.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
-InventoryEmpty.Size = UDim2.new(0.5, 0, 0.109999999, 0)
-InventoryEmpty.Font = Enum.Font.SourceSans
-InventoryEmpty.Text = ""
-InventoryEmpty.TextColor3 = Color3.fromRGB(0, 0, 0)
-InventoryEmpty.TextSize = 14.000
-
-UICorner_5.Parent = InventoryEmpty
-
-TextLabel_2.Parent = InventoryEmpty
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
-TextLabel_2.ZIndex = 0
-TextLabel_2.Font = Enum.Font.GothamBlack
-TextLabel_2.Text = "Empty Inventory"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
-
-MinigameSkip.Name = "MinigameSkip"
-MinigameSkip.Parent = OptionsScrollingFrame
-MinigameSkip.AnchorPoint = Vector2.new(0.5, 0)
-MinigameSkip.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-MinigameSkip.Position = UDim2.new(-0.200132132, 0, 1.61191082, 0)
-MinigameSkip.Size = UDim2.new(0.5, 0, 0.109999999, 0)
-MinigameSkip.Font = Enum.Font.SourceSans
-MinigameSkip.Text = ""
-MinigameSkip.TextColor3 = Color3.fromRGB(0, 0, 0)
-MinigameSkip.TextSize = 14.000
-
-UICorner_6.Parent = MinigameSkip
-
-TextLabel_3.Parent = MinigameSkip
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Size = UDim2.new(1, 0, 1, 0)
-TextLabel_3.ZIndex = 0
-TextLabel_3.Font = Enum.Font.GothamBlack
-TextLabel_3.Text = "Minigame Skip"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 14.000
-
-NoUniform.Name = "NoUniform"
-NoUniform.Parent = OptionsScrollingFrame
-NoUniform.AnchorPoint = Vector2.new(0.5, 0)
-NoUniform.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-NoUniform.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
-NoUniform.Size = UDim2.new(0.5, 0, 0.109999999, 0)
-NoUniform.Font = Enum.Font.SourceSans
-NoUniform.Text = ""
-NoUniform.TextColor3 = Color3.fromRGB(0, 0, 0)
-NoUniform.TextSize = 14.000
-
-UICorner_7.Parent = NoUniform
-
-TextLabel_4.Parent = NoUniform
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
-TextLabel_4.ZIndex = 0
-TextLabel_4.Font = Enum.Font.GothamBlack
-TextLabel_4.Text = "Unequip Uniform"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-RemoveAd.Name = "RemoveAd"
-RemoveAd.Parent = OptionsScrollingFrame
-RemoveAd.AnchorPoint = Vector2.new(0.5, 0)
-RemoveAd.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-RemoveAd.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
-RemoveAd.Size = UDim2.new(0.5, 0, 0.109999999, 0)
-RemoveAd.Font = Enum.Font.SourceSans
-RemoveAd.Text = ""
-RemoveAd.TextColor3 = Color3.fromRGB(0, 0, 0)
-RemoveAd.TextSize = 14.000
-
-UICorner_8.Parent = RemoveAd
-
-TextLabel_5.Parent = RemoveAd
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
-TextLabel_5.ZIndex = 0
-TextLabel_5.Font = Enum.Font.GothamBlack
-TextLabel_5.Text = "Remove Ads"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 14.000
-
 DraggableUi.Name = "DraggableUi"
-DraggableUi.Parent = OptionsScrollingFrame
+DraggableUi.Parent = ScrollingFrame
 DraggableUi.AnchorPoint = Vector2.new(0.5, 0)
 DraggableUi.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 DraggableUi.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
@@ -374,20 +277,113 @@ DraggableUi.Text = ""
 DraggableUi.TextColor3 = Color3.fromRGB(0, 0, 0)
 DraggableUi.TextSize = 14.000
 
-UICorner_9.Parent = DraggableUi
+UICorner_6.Parent = DraggableUi
 
-TextLabel_6.Parent = DraggableUi
+TextLabel_2.Parent = DraggableUi
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_2.ZIndex = 0
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "UiDrag"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+InventoryEmpty.Name = "InventoryEmpty"
+InventoryEmpty.Parent = ScrollingFrame
+InventoryEmpty.AnchorPoint = Vector2.new(0.5, 0)
+InventoryEmpty.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+InventoryEmpty.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
+InventoryEmpty.Size = UDim2.new(0.5, 0, 0.109999999, 0)
+InventoryEmpty.Font = Enum.Font.SourceSans
+InventoryEmpty.Text = ""
+InventoryEmpty.TextColor3 = Color3.fromRGB(0, 0, 0)
+InventoryEmpty.TextSize = 14.000
+
+UICorner_7.Parent = InventoryEmpty
+
+TextLabel_3.Parent = InventoryEmpty
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_3.ZIndex = 0
+TextLabel_3.Font = Enum.Font.GothamBlack
+TextLabel_3.Text = "Empty Inventory"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+MinigameSkip.Name = "MinigameSkip"
+MinigameSkip.Parent = ScrollingFrame
+MinigameSkip.AnchorPoint = Vector2.new(0.5, 0)
+MinigameSkip.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+MinigameSkip.Position = UDim2.new(-0.200132132, 0, 1.61191082, 0)
+MinigameSkip.Size = UDim2.new(0.5, 0, 0.109999999, 0)
+MinigameSkip.Font = Enum.Font.SourceSans
+MinigameSkip.Text = ""
+MinigameSkip.TextColor3 = Color3.fromRGB(0, 0, 0)
+MinigameSkip.TextSize = 14.000
+
+UICorner_8.Parent = MinigameSkip
+
+TextLabel_4.Parent = MinigameSkip
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_4.ZIndex = 0
+TextLabel_4.Font = Enum.Font.GothamBlack
+TextLabel_4.Text = "Minigame Skip"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+
+NoUniform.Name = "NoUniform"
+NoUniform.Parent = ScrollingFrame
+NoUniform.AnchorPoint = Vector2.new(0.5, 0)
+NoUniform.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+NoUniform.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
+NoUniform.Size = UDim2.new(0.5, 0, 0.109999999, 0)
+NoUniform.Font = Enum.Font.SourceSans
+NoUniform.Text = ""
+NoUniform.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoUniform.TextSize = 14.000
+
+UICorner_9.Parent = NoUniform
+
+TextLabel_5.Parent = NoUniform
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_5.ZIndex = 0
+TextLabel_5.Font = Enum.Font.GothamBlack
+TextLabel_5.Text = "Unequip Uniform"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+RemoveAd.Name = "RemoveAd"
+RemoveAd.Parent = ScrollingFrame
+RemoveAd.AnchorPoint = Vector2.new(0.5, 0)
+RemoveAd.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+RemoveAd.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
+RemoveAd.Size = UDim2.new(0.5, 0, 0.109999999, 0)
+RemoveAd.Font = Enum.Font.SourceSans
+RemoveAd.Text = ""
+RemoveAd.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoveAd.TextSize = 14.000
+
+UICorner_10.Parent = RemoveAd
+
+TextLabel_6.Parent = RemoveAd
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_6.ZIndex = 0
 TextLabel_6.Font = Enum.Font.GothamBlack
-TextLabel_6.Text = "UiDrag"
+TextLabel_6.Text = "Remove Ads"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 14.000
 
 TopSkip.Name = "TopSkip"
-TopSkip.Parent = OptionsScrollingFrame
+TopSkip.Parent = ScrollingFrame
 TopSkip.AnchorPoint = Vector2.new(0.5, 0)
 TopSkip.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TopSkip.Position = UDim2.new(0.00456620986, 0, -0.0578947179, 0)
@@ -397,7 +393,7 @@ TopSkip.Text = ""
 TopSkip.TextColor3 = Color3.fromRGB(0, 0, 0)
 TopSkip.TextSize = 14.000
 
-UICorner_10.Parent = TopSkip
+UICorner_11.Parent = TopSkip
 
 TextLabel_7.Parent = TopSkip
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -408,9 +404,6 @@ TextLabel_7.Font = Enum.Font.GothamBlack
 TextLabel_7.Text = "EasySkip"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextSize = 14.000
-
-UICorner_11.CornerRadius = UDim.new(0.0500000007, 1)
-UICorner_11.Parent = OptionsScrollingFrame
 
 TakeOutGui.Name = "TakeOutGui"
 TakeOutGui.Parent = Items
@@ -595,7 +588,6 @@ RightScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 RightScrollingFrame.BackgroundTransparency = 1.000
 RightScrollingFrame.Position = UDim2.new(0.756922424, 0, 0.50000006, 0)
 RightScrollingFrame.Size = UDim2.new(0.486155212, 0, 1, 0)
-RightScrollingFrame.CanvasPosition = Vector2.new(0, 285.687653)
 RightScrollingFrame.CanvasSize = UDim2.new(0, 0, 2.79999995, 0)
 RightScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 RightScrollingFrame.ScrollBarThickness = 0
@@ -1057,7 +1049,7 @@ TextLabel_29.TextSize = 14.000
 
 -- Scripts:
 
-local function WNOBLXP_fake_script() -- Close.Script 
+local function KJKCF_fake_script() -- Close.Script 
 	local script = Instance.new('Script', Close)
 
 	Codes = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes
@@ -1068,8 +1060,20 @@ local function WNOBLXP_fake_script() -- Close.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(WNOBLXP_fake_script)()
-local function YRSIUDW_fake_script() -- InventoryEmpty.Script 
+coroutine.wrap(KJKCF_fake_script)()
+local function VCIX_fake_script() -- DraggableUi.Script 
+	local script = Instance.new('Script', DraggableUi)
+
+	DraggableUi = script.Parent
+	
+	function lclick()
+		game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Draggable = true
+	end
+	
+	DraggableUi.MouseButton1Click:Connect(lclick)
+end
+coroutine.wrap(VCIX_fake_script)()
+local function MVUMAM_fake_script() -- InventoryEmpty.Script 
 	local script = Instance.new('Script', InventoryEmpty)
 
 	EmptyInventoryButton = script.Parent
@@ -1086,8 +1090,8 @@ local function YRSIUDW_fake_script() -- InventoryEmpty.Script
 	
 	EmptyInventoryButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(YRSIUDW_fake_script)()
-local function TEWWRNR_fake_script() -- MinigameSkip.Script 
+coroutine.wrap(MVUMAM_fake_script)()
+local function RPIPHQX_fake_script() -- MinigameSkip.Script 
 	local script = Instance.new('Script', MinigameSkip)
 
 	MinigameSkipButton = script.Parent
@@ -1098,8 +1102,8 @@ local function TEWWRNR_fake_script() -- MinigameSkip.Script
 	
 	MinigameSkipButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(TEWWRNR_fake_script)()
-local function ZCPE_fake_script() -- NoUniform.Script 
+coroutine.wrap(RPIPHQX_fake_script)()
+local function WXFIIK_fake_script() -- NoUniform.Script 
 	local script = Instance.new('Script', NoUniform)
 
 	NoUniformButton = script.Parent
@@ -1110,8 +1114,8 @@ local function ZCPE_fake_script() -- NoUniform.Script
 	
 	NoUniformButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ZCPE_fake_script)()
-local function SZDUTCV_fake_script() -- RemoveAd.Script 
+coroutine.wrap(WXFIIK_fake_script)()
+local function YUQX_fake_script() -- RemoveAd.Script 
 	local script = Instance.new('Script', RemoveAd)
 
 	function lclick()
@@ -1122,20 +1126,8 @@ local function SZDUTCV_fake_script() -- RemoveAd.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(SZDUTCV_fake_script)()
-local function GLLQ_fake_script() -- DraggableUi.Script 
-	local script = Instance.new('Script', DraggableUi)
-
-	DraggableUi = script.Parent
-	
-	function lclick()
-		game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Draggable = true
-	end
-	
-	DraggableUi.MouseButton1Click:Connect(lclick)
-end
-coroutine.wrap(GLLQ_fake_script)()
-local function TIGJX_fake_script() -- TopSkip.Script 
+coroutine.wrap(YUQX_fake_script)()
+local function KAKARTN_fake_script() -- TopSkip.Script 
 	local script = Instance.new('Script', TopSkip)
 
 	function lclick()
@@ -1187,8 +1179,8 @@ local function TIGJX_fake_script() -- TopSkip.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(TIGJX_fake_script)()
-local function VLJCK_fake_script() -- Greeting.Script 
+coroutine.wrap(KAKARTN_fake_script)()
+local function KYBSPX_fake_script() -- Greeting.Script 
 	local script = Instance.new('Script', Greeting)
 
 	function lclick()
@@ -1202,8 +1194,8 @@ local function VLJCK_fake_script() -- Greeting.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VLJCK_fake_script)()
-local function SDBHOKO_fake_script() -- Floor.Script 
+coroutine.wrap(KYBSPX_fake_script)()
+local function ZEABYVN_fake_script() -- Floor.Script 
 	local script = Instance.new('Script', Floor)
 
 	function lclick()
@@ -1217,8 +1209,8 @@ local function SDBHOKO_fake_script() -- Floor.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(SDBHOKO_fake_script)()
-local function JUOOVZ_fake_script() -- TableType.Script 
+coroutine.wrap(ZEABYVN_fake_script)()
+local function BIWI_fake_script() -- TableType.Script 
 	local script = Instance.new('Script', TableType)
 
 	function lclick()
@@ -1232,8 +1224,8 @@ local function JUOOVZ_fake_script() -- TableType.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JUOOVZ_fake_script)()
-local function NENIC_fake_script() -- Alright.Script 
+coroutine.wrap(BIWI_fake_script)()
+local function UOYFZW_fake_script() -- Alright.Script 
 	local script = Instance.new('Script', Alright)
 
 	function lclick()
@@ -1247,8 +1239,8 @@ local function NENIC_fake_script() -- Alright.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(NENIC_fake_script)()
-local function ILFMC_fake_script() -- FollowMe.Script 
+coroutine.wrap(UOYFZW_fake_script)()
+local function RKVM_fake_script() -- FollowMe.Script 
 	local script = Instance.new('Script', FollowMe)
 
 	function lclick()
@@ -1262,8 +1254,8 @@ local function ILFMC_fake_script() -- FollowMe.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ILFMC_fake_script)()
-local function HNTXE_fake_script() -- Farewell.Script 
+coroutine.wrap(RKVM_fake_script)()
+local function ZSTB_fake_script() -- Farewell.Script 
 	local script = Instance.new('Script', Farewell)
 
 	function lclick()
@@ -1277,8 +1269,8 @@ local function HNTXE_fake_script() -- Farewell.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(HNTXE_fake_script)()
-local function KROMBN_fake_script() -- Drinks.Script 
+coroutine.wrap(ZSTB_fake_script)()
+local function SEMB_fake_script() -- Drinks.Script 
 	local script = Instance.new('Script', Drinks)
 
 	function lclick()
@@ -1292,8 +1284,8 @@ local function KROMBN_fake_script() -- Drinks.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(KROMBN_fake_script)()
-local function SZFDDT_fake_script() -- Appetizers.Script 
+coroutine.wrap(SEMB_fake_script)()
+local function RNXRM_fake_script() -- Appetizers.Script 
 	local script = Instance.new('Script', Appetizers)
 
 	function lclick()
@@ -1307,8 +1299,8 @@ local function SZFDDT_fake_script() -- Appetizers.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(SZFDDT_fake_script)()
-local function HKYNE_fake_script() -- Entree.Script 
+coroutine.wrap(RNXRM_fake_script)()
+local function RXQOS_fake_script() -- Entree.Script 
 	local script = Instance.new('Script', Entree)
 
 	function lclick()
@@ -1322,8 +1314,8 @@ local function HKYNE_fake_script() -- Entree.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(HKYNE_fake_script)()
-local function NQTA_fake_script() -- Dessert.Script 
+coroutine.wrap(RXQOS_fake_script)()
+local function ASFBYL_fake_script() -- Dessert.Script 
 	local script = Instance.new('Script', Dessert)
 
 	function lclick()
@@ -1337,8 +1329,8 @@ local function NQTA_fake_script() -- Dessert.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(NQTA_fake_script)()
-local function TLMK_fake_script() -- ComingRightUp.Script 
+coroutine.wrap(ASFBYL_fake_script)()
+local function JLLCX_fake_script() -- ComingRightUp.Script 
 	local script = Instance.new('Script', ComingRightUp)
 
 	function lclick()
@@ -1352,8 +1344,8 @@ local function TLMK_fake_script() -- ComingRightUp.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(TLMK_fake_script)()
-local function HLUSB_fake_script() -- ExcellentChoice.Script 
+coroutine.wrap(JLLCX_fake_script)()
+local function YUDK_fake_script() -- ExcellentChoice.Script 
 	local script = Instance.new('Script', ExcellentChoice)
 
 	function lclick()
@@ -1367,8 +1359,8 @@ local function HLUSB_fake_script() -- ExcellentChoice.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(HLUSB_fake_script)()
-local function JLKONLT_fake_script() -- MoveOn.Script 
+coroutine.wrap(YUDK_fake_script)()
+local function FYDACWN_fake_script() -- MoveOn.Script 
 	local script = Instance.new('Script', MoveOn)
 
 	function lclick()
@@ -1382,8 +1374,8 @@ local function JLKONLT_fake_script() -- MoveOn.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JLKONLT_fake_script)()
-local function DESZ_fake_script() -- OneMoment.Script 
+coroutine.wrap(FYDACWN_fake_script)()
+local function TDXVE_fake_script() -- OneMoment.Script 
 	local script = Instance.new('Script', OneMoment)
 
 	function lclick()
@@ -1397,8 +1389,8 @@ local function DESZ_fake_script() -- OneMoment.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DESZ_fake_script)()
-local function DOWK_fake_script() -- Okay.Script 
+coroutine.wrap(TDXVE_fake_script)()
+local function LTNCLSV_fake_script() -- Okay.Script 
 	local script = Instance.new('Script', Okay)
 
 	function lclick()
@@ -1412,8 +1404,8 @@ local function DOWK_fake_script() -- Okay.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DOWK_fake_script)()
-local function LXYEWE_fake_script() -- SureThing.Script 
+coroutine.wrap(LTNCLSV_fake_script)()
+local function YUZTTS_fake_script() -- SureThing.Script 
 	local script = Instance.new('Script', SureThing)
 
 	function lclick()
@@ -1427,8 +1419,8 @@ local function LXYEWE_fake_script() -- SureThing.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(LXYEWE_fake_script)()
-local function OVESWGZ_fake_script() -- YoureWelcome.Script 
+coroutine.wrap(YUZTTS_fake_script)()
+local function SKQMD_fake_script() -- YoureWelcome.Script 
 	local script = Instance.new('Script', YoureWelcome)
 
 	function lclick()
@@ -1442,8 +1434,8 @@ local function OVESWGZ_fake_script() -- YoureWelcome.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(OVESWGZ_fake_script)()
-local function EBOH_fake_script() -- SorryForTheWait.Script 
+coroutine.wrap(SKQMD_fake_script)()
+local function WOVODJB_fake_script() -- SorryForTheWait.Script 
 	local script = Instance.new('Script', SorryForTheWait)
 
 	function lclick()
@@ -1457,8 +1449,8 @@ local function EBOH_fake_script() -- SorryForTheWait.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(EBOH_fake_script)()
-local function VEDVAEH_fake_script() -- DiningIn.Script 
+coroutine.wrap(WOVODJB_fake_script)()
+local function EKTSFUI_fake_script() -- DiningIn.Script 
 	local script = Instance.new('Script', DiningIn)
 
 	DiningInButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.DiningIn
@@ -1479,8 +1471,8 @@ local function VEDVAEH_fake_script() -- DiningIn.Script
 	
 	DiningInButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VEDVAEH_fake_script)()
-local function MXNPSLU_fake_script() -- TakeOut.Script 
+coroutine.wrap(EKTSFUI_fake_script)()
+local function IPKBDWV_fake_script() -- TakeOut.Script 
 	local script = Instance.new('Script', TakeOut)
 
 	TakeOutButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.TakeOut
@@ -1502,8 +1494,8 @@ local function MXNPSLU_fake_script() -- TakeOut.Script
 	
 	TakeOutButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(MXNPSLU_fake_script)()
-local function WPYREQ_fake_script() -- Notepad.Script 
+coroutine.wrap(IPKBDWV_fake_script)()
+local function UQTAUJ_fake_script() -- Notepad.Script 
 	local script = Instance.new('Script', Notepad)
 
 	NotepadButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.Notepad
@@ -1524,8 +1516,8 @@ local function WPYREQ_fake_script() -- Notepad.Script
 	
 	NotepadButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(WPYREQ_fake_script)()
-local function WDYGG_fake_script() -- Options.Script 
+coroutine.wrap(UQTAUJ_fake_script)()
+local function JDQQJAB_fake_script() -- Options.Script 
 	local script = Instance.new('Script', Options)
 
 	OptionsButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.Options
@@ -1546,4 +1538,4 @@ local function WDYGG_fake_script() -- Options.Script
 	
 	OptionsButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(WDYGG_fake_script)()
+coroutine.wrap(JDQQJAB_fake_script)()
