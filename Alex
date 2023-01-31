@@ -40,6 +40,7 @@ local TopSkip = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
 local UIListLayout = Instance.new("UIListLayout")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 local TakeOutGui = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
 local DiningInGui = Instance.new("Frame")
@@ -70,52 +71,52 @@ local UICorner_20 = Instance.new("UICorner")
 local Drinks = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
 local TextLabel_14 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
 local Appetizers = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local TextLabel_15 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
 local Entree = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
 local TextLabel_16 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 local Dessert = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
 local TextLabel_17 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 local ComingRightUp = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
 local TextLabel_18 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
 local ExcellentChoice = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
 local TextLabel_19 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
 local MoveOn = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
 local TextLabel_20 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
 local OneMoment = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
 local TextLabel_21 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
 local Okay = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
 local TextLabel_22 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
 local SureThing = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
 local TextLabel_23 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local UIListLayout_3 = Instance.new("UIListLayout")
 local YoureWelcome = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
 local TextLabel_24 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
 local SorryForTheWait = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
 local TextLabel_25 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
 local Tabs = Instance.new("Frame")
 local UIListLayout_4 = Instance.new("UIListLayout")
 local UICorner_33 = Instance.new("UICorner")
@@ -406,6 +407,9 @@ UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0.0199999996, 0)
 
+UIAspectRatioConstraint_3.Parent = ScrollingFrame
+UIAspectRatioConstraint_3.AspectRatio = 1.605
+
 TakeOutGui.Name = "TakeOutGui"
 TakeOutGui.Parent = Items
 TakeOutGui.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -619,9 +623,9 @@ TextLabel_14.Text = "Drinks"
 TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.TextSize = 14.000
 
-UIAspectRatioConstraint_3.Parent = Drinks
-UIAspectRatioConstraint_3.AspectRatio = 2.500
-UIAspectRatioConstraint_3.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_4.Parent = Drinks
+UIAspectRatioConstraint_4.AspectRatio = 2.500
+UIAspectRatioConstraint_4.AspectType = Enum.AspectType.ScaleWithParentSize
 
 Appetizers.Name = "Appetizers"
 Appetizers.Parent = RightScrollingFrame
@@ -647,9 +651,9 @@ TextLabel_15.Text = "Appetizers"
 TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.TextSize = 14.000
 
-UIAspectRatioConstraint_4.Parent = Appetizers
-UIAspectRatioConstraint_4.AspectRatio = 2.500
-UIAspectRatioConstraint_4.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_5.Parent = Appetizers
+UIAspectRatioConstraint_5.AspectRatio = 2.500
+UIAspectRatioConstraint_5.AspectType = Enum.AspectType.ScaleWithParentSize
 
 Entree.Name = "Entree"
 Entree.Parent = RightScrollingFrame
@@ -675,9 +679,9 @@ TextLabel_16.Text = "Entree"
 TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.TextSize = 14.000
 
-UIAspectRatioConstraint_5.Parent = Entree
-UIAspectRatioConstraint_5.AspectRatio = 2.500
-UIAspectRatioConstraint_5.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_6.Parent = Entree
+UIAspectRatioConstraint_6.AspectRatio = 2.500
+UIAspectRatioConstraint_6.AspectType = Enum.AspectType.ScaleWithParentSize
 
 Dessert.Name = "Dessert"
 Dessert.Parent = RightScrollingFrame
@@ -703,9 +707,9 @@ TextLabel_17.Text = "Desserts"
 TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.TextSize = 14.000
 
-UIAspectRatioConstraint_6.Parent = Dessert
-UIAspectRatioConstraint_6.AspectRatio = 2.500
-UIAspectRatioConstraint_6.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_7.Parent = Dessert
+UIAspectRatioConstraint_7.AspectRatio = 2.500
+UIAspectRatioConstraint_7.AspectType = Enum.AspectType.ScaleWithParentSize
 
 ComingRightUp.Name = "ComingRightUp"
 ComingRightUp.Parent = RightScrollingFrame
@@ -732,9 +736,9 @@ TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.TextSize = 14.000
 TextLabel_18.TextWrapped = true
 
-UIAspectRatioConstraint_7.Parent = ComingRightUp
-UIAspectRatioConstraint_7.AspectRatio = 2.500
-UIAspectRatioConstraint_7.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_8.Parent = ComingRightUp
+UIAspectRatioConstraint_8.AspectRatio = 2.500
+UIAspectRatioConstraint_8.AspectType = Enum.AspectType.ScaleWithParentSize
 
 ExcellentChoice.Name = "ExcellentChoice"
 ExcellentChoice.Parent = RightScrollingFrame
@@ -761,9 +765,9 @@ TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.TextSize = 14.000
 TextLabel_19.TextWrapped = true
 
-UIAspectRatioConstraint_8.Parent = ExcellentChoice
-UIAspectRatioConstraint_8.AspectRatio = 2.500
-UIAspectRatioConstraint_8.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_9.Parent = ExcellentChoice
+UIAspectRatioConstraint_9.AspectRatio = 2.500
+UIAspectRatioConstraint_9.AspectType = Enum.AspectType.ScaleWithParentSize
 
 MoveOn.Name = "MoveOn"
 MoveOn.Parent = RightScrollingFrame
@@ -790,9 +794,9 @@ TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.TextSize = 14.000
 TextLabel_20.TextWrapped = true
 
-UIAspectRatioConstraint_9.Parent = MoveOn
-UIAspectRatioConstraint_9.AspectRatio = 2.500
-UIAspectRatioConstraint_9.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_10.Parent = MoveOn
+UIAspectRatioConstraint_10.AspectRatio = 2.500
+UIAspectRatioConstraint_10.AspectType = Enum.AspectType.ScaleWithParentSize
 
 OneMoment.Name = "OneMoment"
 OneMoment.Parent = RightScrollingFrame
@@ -819,9 +823,9 @@ TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.TextSize = 14.000
 TextLabel_21.TextWrapped = true
 
-UIAspectRatioConstraint_10.Parent = OneMoment
-UIAspectRatioConstraint_10.AspectRatio = 2.500
-UIAspectRatioConstraint_10.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_11.Parent = OneMoment
+UIAspectRatioConstraint_11.AspectRatio = 2.500
+UIAspectRatioConstraint_11.AspectType = Enum.AspectType.ScaleWithParentSize
 
 Okay.Name = "Okay"
 Okay.Parent = RightScrollingFrame
@@ -847,9 +851,9 @@ TextLabel_22.Text = "Okay!"
 TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_22.TextSize = 14.000
 
-UIAspectRatioConstraint_11.Parent = Okay
-UIAspectRatioConstraint_11.AspectRatio = 2.500
-UIAspectRatioConstraint_11.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_12.Parent = Okay
+UIAspectRatioConstraint_12.AspectRatio = 2.500
+UIAspectRatioConstraint_12.AspectType = Enum.AspectType.ScaleWithParentSize
 
 SureThing.Name = "SureThing"
 SureThing.Parent = RightScrollingFrame
@@ -875,9 +879,9 @@ TextLabel_23.Text = "Sure thing!"
 TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.TextSize = 14.000
 
-UIAspectRatioConstraint_12.Parent = SureThing
-UIAspectRatioConstraint_12.AspectRatio = 2.500
-UIAspectRatioConstraint_12.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_13.Parent = SureThing
+UIAspectRatioConstraint_13.AspectRatio = 2.500
+UIAspectRatioConstraint_13.AspectType = Enum.AspectType.ScaleWithParentSize
 
 UIListLayout_3.Parent = RightScrollingFrame
 UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -909,9 +913,9 @@ TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_24.TextSize = 14.000
 TextLabel_24.TextWrapped = true
 
-UIAspectRatioConstraint_13.Parent = YoureWelcome
-UIAspectRatioConstraint_13.AspectRatio = 2.500
-UIAspectRatioConstraint_13.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_14.Parent = YoureWelcome
+UIAspectRatioConstraint_14.AspectRatio = 2.500
+UIAspectRatioConstraint_14.AspectType = Enum.AspectType.ScaleWithParentSize
 
 SorryForTheWait.Name = "SorryForTheWait"
 SorryForTheWait.Parent = RightScrollingFrame
@@ -938,9 +942,9 @@ TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_25.TextSize = 14.000
 TextLabel_25.TextWrapped = true
 
-UIAspectRatioConstraint_14.Parent = SorryForTheWait
-UIAspectRatioConstraint_14.AspectRatio = 2.500
-UIAspectRatioConstraint_14.AspectType = Enum.AspectType.ScaleWithParentSize
+UIAspectRatioConstraint_15.Parent = SorryForTheWait
+UIAspectRatioConstraint_15.AspectRatio = 2.500
+UIAspectRatioConstraint_15.AspectType = Enum.AspectType.ScaleWithParentSize
 
 Tabs.Name = "Tabs"
 Tabs.Parent = Main
@@ -1050,7 +1054,7 @@ TextLabel_29.TextSize = 14.000
 
 -- Scripts:
 
-local function GAGFSYQ_fake_script() -- Close.Script 
+local function ISHLPGT_fake_script() -- Close.Script 
 	local script = Instance.new('Script', Close)
 
 	Codes = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes
@@ -1061,8 +1065,8 @@ local function GAGFSYQ_fake_script() -- Close.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GAGFSYQ_fake_script)()
-local function XFVQBK_fake_script() -- DraggableUi.Script 
+coroutine.wrap(ISHLPGT_fake_script)()
+local function XCNULUZ_fake_script() -- DraggableUi.Script 
 	local script = Instance.new('Script', DraggableUi)
 
 	DraggableUi = script.Parent
@@ -1073,8 +1077,8 @@ local function XFVQBK_fake_script() -- DraggableUi.Script
 	
 	DraggableUi.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(XFVQBK_fake_script)()
-local function IALHMIV_fake_script() -- InventoryEmpty.Script 
+coroutine.wrap(XCNULUZ_fake_script)()
+local function WBIKKBF_fake_script() -- InventoryEmpty.Script 
 	local script = Instance.new('Script', InventoryEmpty)
 
 	EmptyInventoryButton = script.Parent
@@ -1091,8 +1095,8 @@ local function IALHMIV_fake_script() -- InventoryEmpty.Script
 	
 	EmptyInventoryButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(IALHMIV_fake_script)()
-local function CGEG_fake_script() -- MinigameSkip.Script 
+coroutine.wrap(WBIKKBF_fake_script)()
+local function AJRTZVD_fake_script() -- MinigameSkip.Script 
 	local script = Instance.new('Script', MinigameSkip)
 
 	MinigameSkipButton = script.Parent
@@ -1103,8 +1107,8 @@ local function CGEG_fake_script() -- MinigameSkip.Script
 	
 	MinigameSkipButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(CGEG_fake_script)()
-local function YZGBC_fake_script() -- NoUniform.Script 
+coroutine.wrap(AJRTZVD_fake_script)()
+local function BINMZZD_fake_script() -- NoUniform.Script 
 	local script = Instance.new('Script', NoUniform)
 
 	NoUniformButton = script.Parent
@@ -1115,8 +1119,8 @@ local function YZGBC_fake_script() -- NoUniform.Script
 	
 	NoUniformButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(YZGBC_fake_script)()
-local function JPTDMI_fake_script() -- RemoveAd.Script 
+coroutine.wrap(BINMZZD_fake_script)()
+local function DXURU_fake_script() -- RemoveAd.Script 
 	local script = Instance.new('Script', RemoveAd)
 
 	function lclick()
@@ -1127,8 +1131,8 @@ local function JPTDMI_fake_script() -- RemoveAd.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JPTDMI_fake_script)()
-local function UQECR_fake_script() -- TopSkip.Script 
+coroutine.wrap(DXURU_fake_script)()
+local function SVAKXLY_fake_script() -- TopSkip.Script 
 	local script = Instance.new('Script', TopSkip)
 
 	function lclick()
@@ -1180,8 +1184,8 @@ local function UQECR_fake_script() -- TopSkip.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(UQECR_fake_script)()
-local function CHTGQOE_fake_script() -- Greeting.Script 
+coroutine.wrap(SVAKXLY_fake_script)()
+local function GEJUZWD_fake_script() -- Greeting.Script 
 	local script = Instance.new('Script', Greeting)
 
 	function lclick()
@@ -1195,8 +1199,8 @@ local function CHTGQOE_fake_script() -- Greeting.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(CHTGQOE_fake_script)()
-local function DYQSJG_fake_script() -- Floor.Script 
+coroutine.wrap(GEJUZWD_fake_script)()
+local function XMHKIS_fake_script() -- Floor.Script 
 	local script = Instance.new('Script', Floor)
 
 	function lclick()
@@ -1210,8 +1214,8 @@ local function DYQSJG_fake_script() -- Floor.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DYQSJG_fake_script)()
-local function NIENIMZ_fake_script() -- TableType.Script 
+coroutine.wrap(XMHKIS_fake_script)()
+local function CBJJI_fake_script() -- TableType.Script 
 	local script = Instance.new('Script', TableType)
 
 	function lclick()
@@ -1225,8 +1229,8 @@ local function NIENIMZ_fake_script() -- TableType.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(NIENIMZ_fake_script)()
-local function DDPEU_fake_script() -- Alright.Script 
+coroutine.wrap(CBJJI_fake_script)()
+local function HMBYH_fake_script() -- Alright.Script 
 	local script = Instance.new('Script', Alright)
 
 	function lclick()
@@ -1240,8 +1244,8 @@ local function DDPEU_fake_script() -- Alright.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DDPEU_fake_script)()
-local function GRLSOFF_fake_script() -- FollowMe.Script 
+coroutine.wrap(HMBYH_fake_script)()
+local function TIEYRSN_fake_script() -- FollowMe.Script 
 	local script = Instance.new('Script', FollowMe)
 
 	function lclick()
@@ -1255,8 +1259,8 @@ local function GRLSOFF_fake_script() -- FollowMe.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GRLSOFF_fake_script)()
-local function OYEH_fake_script() -- Farewell.Script 
+coroutine.wrap(TIEYRSN_fake_script)()
+local function LXIERZR_fake_script() -- Farewell.Script 
 	local script = Instance.new('Script', Farewell)
 
 	function lclick()
@@ -1270,8 +1274,8 @@ local function OYEH_fake_script() -- Farewell.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(OYEH_fake_script)()
-local function RRNGPG_fake_script() -- Drinks.Script 
+coroutine.wrap(LXIERZR_fake_script)()
+local function QFECB_fake_script() -- Drinks.Script 
 	local script = Instance.new('Script', Drinks)
 
 	function lclick()
@@ -1285,8 +1289,8 @@ local function RRNGPG_fake_script() -- Drinks.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(RRNGPG_fake_script)()
-local function NETNK_fake_script() -- Appetizers.Script 
+coroutine.wrap(QFECB_fake_script)()
+local function HMNBS_fake_script() -- Appetizers.Script 
 	local script = Instance.new('Script', Appetizers)
 
 	function lclick()
@@ -1300,8 +1304,8 @@ local function NETNK_fake_script() -- Appetizers.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(NETNK_fake_script)()
-local function ZOUT_fake_script() -- Entree.Script 
+coroutine.wrap(HMNBS_fake_script)()
+local function HDSOMX_fake_script() -- Entree.Script 
 	local script = Instance.new('Script', Entree)
 
 	function lclick()
@@ -1315,8 +1319,8 @@ local function ZOUT_fake_script() -- Entree.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ZOUT_fake_script)()
-local function XTEQBR_fake_script() -- Dessert.Script 
+coroutine.wrap(HDSOMX_fake_script)()
+local function CWCKRYJ_fake_script() -- Dessert.Script 
 	local script = Instance.new('Script', Dessert)
 
 	function lclick()
@@ -1330,8 +1334,8 @@ local function XTEQBR_fake_script() -- Dessert.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(XTEQBR_fake_script)()
-local function XDGCI_fake_script() -- ComingRightUp.Script 
+coroutine.wrap(CWCKRYJ_fake_script)()
+local function KHJCM_fake_script() -- ComingRightUp.Script 
 	local script = Instance.new('Script', ComingRightUp)
 
 	function lclick()
@@ -1345,8 +1349,8 @@ local function XDGCI_fake_script() -- ComingRightUp.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(XDGCI_fake_script)()
-local function KWWNGX_fake_script() -- ExcellentChoice.Script 
+coroutine.wrap(KHJCM_fake_script)()
+local function PJWOX_fake_script() -- ExcellentChoice.Script 
 	local script = Instance.new('Script', ExcellentChoice)
 
 	function lclick()
@@ -1360,8 +1364,8 @@ local function KWWNGX_fake_script() -- ExcellentChoice.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(KWWNGX_fake_script)()
-local function VGVOIDZ_fake_script() -- MoveOn.Script 
+coroutine.wrap(PJWOX_fake_script)()
+local function KBFER_fake_script() -- MoveOn.Script 
 	local script = Instance.new('Script', MoveOn)
 
 	function lclick()
@@ -1375,8 +1379,8 @@ local function VGVOIDZ_fake_script() -- MoveOn.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VGVOIDZ_fake_script)()
-local function YQPK_fake_script() -- OneMoment.Script 
+coroutine.wrap(KBFER_fake_script)()
+local function CKMK_fake_script() -- OneMoment.Script 
 	local script = Instance.new('Script', OneMoment)
 
 	function lclick()
@@ -1390,8 +1394,8 @@ local function YQPK_fake_script() -- OneMoment.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(YQPK_fake_script)()
-local function GOVW_fake_script() -- Okay.Script 
+coroutine.wrap(CKMK_fake_script)()
+local function AOLLDI_fake_script() -- Okay.Script 
 	local script = Instance.new('Script', Okay)
 
 	function lclick()
@@ -1405,8 +1409,8 @@ local function GOVW_fake_script() -- Okay.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GOVW_fake_script)()
-local function AKEPM_fake_script() -- SureThing.Script 
+coroutine.wrap(AOLLDI_fake_script)()
+local function CROW_fake_script() -- SureThing.Script 
 	local script = Instance.new('Script', SureThing)
 
 	function lclick()
@@ -1420,8 +1424,8 @@ local function AKEPM_fake_script() -- SureThing.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(AKEPM_fake_script)()
-local function ERUQFMR_fake_script() -- YoureWelcome.Script 
+coroutine.wrap(CROW_fake_script)()
+local function WVXZPD_fake_script() -- YoureWelcome.Script 
 	local script = Instance.new('Script', YoureWelcome)
 
 	function lclick()
@@ -1435,8 +1439,8 @@ local function ERUQFMR_fake_script() -- YoureWelcome.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ERUQFMR_fake_script)()
-local function GIDOU_fake_script() -- SorryForTheWait.Script 
+coroutine.wrap(WVXZPD_fake_script)()
+local function LREON_fake_script() -- SorryForTheWait.Script 
 	local script = Instance.new('Script', SorryForTheWait)
 
 	function lclick()
@@ -1450,8 +1454,8 @@ local function GIDOU_fake_script() -- SorryForTheWait.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GIDOU_fake_script)()
-local function QNRWCM_fake_script() -- DiningIn.Script 
+coroutine.wrap(LREON_fake_script)()
+local function JYVJ_fake_script() -- DiningIn.Script 
 	local script = Instance.new('Script', DiningIn)
 
 	DiningInButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.DiningIn
@@ -1472,8 +1476,8 @@ local function QNRWCM_fake_script() -- DiningIn.Script
 	
 	DiningInButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(QNRWCM_fake_script)()
-local function OKKK_fake_script() -- TakeOut.Script 
+coroutine.wrap(JYVJ_fake_script)()
+local function GHIGUP_fake_script() -- TakeOut.Script 
 	local script = Instance.new('Script', TakeOut)
 
 	TakeOutButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.TakeOut
@@ -1495,8 +1499,8 @@ local function OKKK_fake_script() -- TakeOut.Script
 	
 	TakeOutButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(OKKK_fake_script)()
-local function LKDCEQS_fake_script() -- Notepad.Script 
+coroutine.wrap(GHIGUP_fake_script)()
+local function JXKKVKC_fake_script() -- Notepad.Script 
 	local script = Instance.new('Script', Notepad)
 
 	NotepadButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.Notepad
@@ -1517,8 +1521,8 @@ local function LKDCEQS_fake_script() -- Notepad.Script
 	
 	NotepadButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(LKDCEQS_fake_script)()
-local function EGSEY_fake_script() -- Options.Script 
+coroutine.wrap(JXKKVKC_fake_script)()
+local function MXHJO_fake_script() -- Options.Script 
 	local script = Instance.new('Script', Options)
 
 	OptionsButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.Options
@@ -1539,4 +1543,4 @@ local function EGSEY_fake_script() -- Options.Script
 	
 	OptionsButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(EGSEY_fake_script)()
+coroutine.wrap(MXHJO_fake_script)()
