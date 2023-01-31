@@ -1,0 +1,28 @@
+game:GetService("Players").babygwore.PlayerGui.UserInterface.SidebarFrames.Codes:Destroy()
+game:GetService("Players").babygwore.PlayerGui.UserInterface.Cooking.Tasks:Destroy()
+
+wait(.1)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/KohauV2/main/Alex'))()
+
+wait(.1)
+
+TwitterButton = game.Players.babygwore.PlayerGui.UserInterface.Sidebar.Codes
+CodeFrame = game.Players.babygwore.PlayerGui.UserInterface.SidebarFrames.Codes
+
+local function CKKG_fake_script()
+	local script = Instance.new('Script',game.Players.babygwore.PlayerGui.UserInterface.Sidebar.Codes)
+
+	function lclick()
+		if  CodeFrame.Visible == true then
+			CodeFrame.Visible = false else
+			if CodeFrame.Visible == false then
+				CodeFrame.Visible = true
+			end
+		end
+	end
+
+	TwitterButton.MouseButton1Click:Connect(lclick)
+
+end
+coroutine.wrap(CKKG_fake_script)()
