@@ -40,7 +40,6 @@ local TopSkip = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
 local UIListLayout = Instance.new("UIListLayout")
-local UISizeConstraint_2 = Instance.new("UISizeConstraint")
 local TakeOutGui = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
 local DiningInGui = Instance.new("Frame")
@@ -143,7 +142,6 @@ Codes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Codes.BackgroundTransparency = 1.000
 Codes.Position = UDim2.new(0.499344707, 0, 0.498942912, 0)
 Codes.Size = UDim2.new(0.504057288, 0, 0.558892548, 0)
-Codes.Visible = false
 Codes.Image = "http://www.roblox.com/asset/?id=6439845095"
 
 Banner1.Name = "Banner1"
@@ -258,12 +256,11 @@ UICorner_4.CornerRadius = UDim.new(0.0500000007, 1)
 UICorner_4.Parent = OptionsGui
 
 ScrollingFrame.Parent = OptionsGui
-ScrollingFrame.Active = true
 ScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-ScrollingFrame.Size = UDim2.new(0, 219, 0, 164)
+ScrollingFrame.Size = UDim2.new(1, 0, 1, 0)
 
 DraggableUi.Name = "DraggableUi"
 DraggableUi.Parent = ScrollingFrame
@@ -408,9 +405,6 @@ UIListLayout.Parent = ScrollingFrame
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0.0199999996, 0)
-
-UISizeConstraint_2.Parent = ScrollingFrame
-UISizeConstraint_2.MinSize = Vector2.new(5, 5)
 
 TakeOutGui.Name = "TakeOutGui"
 TakeOutGui.Parent = Items
@@ -1056,7 +1050,7 @@ TextLabel_29.TextSize = 14.000
 
 -- Scripts:
 
-local function PAJN_fake_script() -- Close.Script 
+local function GAGFSYQ_fake_script() -- Close.Script 
 	local script = Instance.new('Script', Close)
 
 	Codes = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes
@@ -1067,8 +1061,8 @@ local function PAJN_fake_script() -- Close.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(PAJN_fake_script)()
-local function GMFV_fake_script() -- DraggableUi.Script 
+coroutine.wrap(GAGFSYQ_fake_script)()
+local function XFVQBK_fake_script() -- DraggableUi.Script 
 	local script = Instance.new('Script', DraggableUi)
 
 	DraggableUi = script.Parent
@@ -1079,8 +1073,8 @@ local function GMFV_fake_script() -- DraggableUi.Script
 	
 	DraggableUi.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(GMFV_fake_script)()
-local function BMLLUWC_fake_script() -- InventoryEmpty.Script 
+coroutine.wrap(XFVQBK_fake_script)()
+local function IALHMIV_fake_script() -- InventoryEmpty.Script 
 	local script = Instance.new('Script', InventoryEmpty)
 
 	EmptyInventoryButton = script.Parent
@@ -1097,8 +1091,8 @@ local function BMLLUWC_fake_script() -- InventoryEmpty.Script
 	
 	EmptyInventoryButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(BMLLUWC_fake_script)()
-local function KWNTZC_fake_script() -- MinigameSkip.Script 
+coroutine.wrap(IALHMIV_fake_script)()
+local function CGEG_fake_script() -- MinigameSkip.Script 
 	local script = Instance.new('Script', MinigameSkip)
 
 	MinigameSkipButton = script.Parent
@@ -1109,8 +1103,8 @@ local function KWNTZC_fake_script() -- MinigameSkip.Script
 	
 	MinigameSkipButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(KWNTZC_fake_script)()
-local function RSNJMK_fake_script() -- NoUniform.Script 
+coroutine.wrap(CGEG_fake_script)()
+local function YZGBC_fake_script() -- NoUniform.Script 
 	local script = Instance.new('Script', NoUniform)
 
 	NoUniformButton = script.Parent
@@ -1121,8 +1115,8 @@ local function RSNJMK_fake_script() -- NoUniform.Script
 	
 	NoUniformButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(RSNJMK_fake_script)()
-local function ICFMUMF_fake_script() -- RemoveAd.Script 
+coroutine.wrap(YZGBC_fake_script)()
+local function JPTDMI_fake_script() -- RemoveAd.Script 
 	local script = Instance.new('Script', RemoveAd)
 
 	function lclick()
@@ -1133,8 +1127,8 @@ local function ICFMUMF_fake_script() -- RemoveAd.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ICFMUMF_fake_script)()
-local function XXNUU_fake_script() -- TopSkip.Script 
+coroutine.wrap(JPTDMI_fake_script)()
+local function UQECR_fake_script() -- TopSkip.Script 
 	local script = Instance.new('Script', TopSkip)
 
 	function lclick()
@@ -1186,8 +1180,8 @@ local function XXNUU_fake_script() -- TopSkip.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(XXNUU_fake_script)()
-local function PIVE_fake_script() -- Greeting.Script 
+coroutine.wrap(UQECR_fake_script)()
+local function CHTGQOE_fake_script() -- Greeting.Script 
 	local script = Instance.new('Script', Greeting)
 
 	function lclick()
@@ -1201,8 +1195,8 @@ local function PIVE_fake_script() -- Greeting.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(PIVE_fake_script)()
-local function CZCQ_fake_script() -- Floor.Script 
+coroutine.wrap(CHTGQOE_fake_script)()
+local function DYQSJG_fake_script() -- Floor.Script 
 	local script = Instance.new('Script', Floor)
 
 	function lclick()
@@ -1216,8 +1210,8 @@ local function CZCQ_fake_script() -- Floor.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(CZCQ_fake_script)()
-local function TQRYNFL_fake_script() -- TableType.Script 
+coroutine.wrap(DYQSJG_fake_script)()
+local function NIENIMZ_fake_script() -- TableType.Script 
 	local script = Instance.new('Script', TableType)
 
 	function lclick()
@@ -1231,8 +1225,8 @@ local function TQRYNFL_fake_script() -- TableType.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(TQRYNFL_fake_script)()
-local function VYDPO_fake_script() -- Alright.Script 
+coroutine.wrap(NIENIMZ_fake_script)()
+local function DDPEU_fake_script() -- Alright.Script 
 	local script = Instance.new('Script', Alright)
 
 	function lclick()
@@ -1246,8 +1240,8 @@ local function VYDPO_fake_script() -- Alright.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VYDPO_fake_script)()
-local function BKTRN_fake_script() -- FollowMe.Script 
+coroutine.wrap(DDPEU_fake_script)()
+local function GRLSOFF_fake_script() -- FollowMe.Script 
 	local script = Instance.new('Script', FollowMe)
 
 	function lclick()
@@ -1261,8 +1255,8 @@ local function BKTRN_fake_script() -- FollowMe.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(BKTRN_fake_script)()
-local function JRANK_fake_script() -- Farewell.Script 
+coroutine.wrap(GRLSOFF_fake_script)()
+local function OYEH_fake_script() -- Farewell.Script 
 	local script = Instance.new('Script', Farewell)
 
 	function lclick()
@@ -1276,8 +1270,8 @@ local function JRANK_fake_script() -- Farewell.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JRANK_fake_script)()
-local function VJACGSO_fake_script() -- Drinks.Script 
+coroutine.wrap(OYEH_fake_script)()
+local function RRNGPG_fake_script() -- Drinks.Script 
 	local script = Instance.new('Script', Drinks)
 
 	function lclick()
@@ -1291,8 +1285,8 @@ local function VJACGSO_fake_script() -- Drinks.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(VJACGSO_fake_script)()
-local function KUPSIEV_fake_script() -- Appetizers.Script 
+coroutine.wrap(RRNGPG_fake_script)()
+local function NETNK_fake_script() -- Appetizers.Script 
 	local script = Instance.new('Script', Appetizers)
 
 	function lclick()
@@ -1306,8 +1300,8 @@ local function KUPSIEV_fake_script() -- Appetizers.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(KUPSIEV_fake_script)()
-local function ONQLET_fake_script() -- Entree.Script 
+coroutine.wrap(NETNK_fake_script)()
+local function ZOUT_fake_script() -- Entree.Script 
 	local script = Instance.new('Script', Entree)
 
 	function lclick()
@@ -1321,8 +1315,8 @@ local function ONQLET_fake_script() -- Entree.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(ONQLET_fake_script)()
-local function JAKCUF_fake_script() -- Dessert.Script 
+coroutine.wrap(ZOUT_fake_script)()
+local function XTEQBR_fake_script() -- Dessert.Script 
 	local script = Instance.new('Script', Dessert)
 
 	function lclick()
@@ -1336,8 +1330,8 @@ local function JAKCUF_fake_script() -- Dessert.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(JAKCUF_fake_script)()
-local function THFB_fake_script() -- ComingRightUp.Script 
+coroutine.wrap(XTEQBR_fake_script)()
+local function XDGCI_fake_script() -- ComingRightUp.Script 
 	local script = Instance.new('Script', ComingRightUp)
 
 	function lclick()
@@ -1351,8 +1345,8 @@ local function THFB_fake_script() -- ComingRightUp.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(THFB_fake_script)()
-local function OQIXHR_fake_script() -- ExcellentChoice.Script 
+coroutine.wrap(XDGCI_fake_script)()
+local function KWWNGX_fake_script() -- ExcellentChoice.Script 
 	local script = Instance.new('Script', ExcellentChoice)
 
 	function lclick()
@@ -1366,8 +1360,8 @@ local function OQIXHR_fake_script() -- ExcellentChoice.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(OQIXHR_fake_script)()
-local function DPULY_fake_script() -- MoveOn.Script 
+coroutine.wrap(KWWNGX_fake_script)()
+local function VGVOIDZ_fake_script() -- MoveOn.Script 
 	local script = Instance.new('Script', MoveOn)
 
 	function lclick()
@@ -1381,8 +1375,8 @@ local function DPULY_fake_script() -- MoveOn.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(DPULY_fake_script)()
-local function EKEGEZ_fake_script() -- OneMoment.Script 
+coroutine.wrap(VGVOIDZ_fake_script)()
+local function YQPK_fake_script() -- OneMoment.Script 
 	local script = Instance.new('Script', OneMoment)
 
 	function lclick()
@@ -1396,8 +1390,8 @@ local function EKEGEZ_fake_script() -- OneMoment.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(EKEGEZ_fake_script)()
-local function OERSOS_fake_script() -- Okay.Script 
+coroutine.wrap(YQPK_fake_script)()
+local function GOVW_fake_script() -- Okay.Script 
 	local script = Instance.new('Script', Okay)
 
 	function lclick()
@@ -1411,8 +1405,8 @@ local function OERSOS_fake_script() -- Okay.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(OERSOS_fake_script)()
-local function HRFXA_fake_script() -- SureThing.Script 
+coroutine.wrap(GOVW_fake_script)()
+local function AKEPM_fake_script() -- SureThing.Script 
 	local script = Instance.new('Script', SureThing)
 
 	function lclick()
@@ -1426,8 +1420,8 @@ local function HRFXA_fake_script() -- SureThing.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(HRFXA_fake_script)()
-local function BSCT_fake_script() -- YoureWelcome.Script 
+coroutine.wrap(AKEPM_fake_script)()
+local function ERUQFMR_fake_script() -- YoureWelcome.Script 
 	local script = Instance.new('Script', YoureWelcome)
 
 	function lclick()
@@ -1441,8 +1435,8 @@ local function BSCT_fake_script() -- YoureWelcome.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(BSCT_fake_script)()
-local function SSXE_fake_script() -- SorryForTheWait.Script 
+coroutine.wrap(ERUQFMR_fake_script)()
+local function GIDOU_fake_script() -- SorryForTheWait.Script 
 	local script = Instance.new('Script', SorryForTheWait)
 
 	function lclick()
@@ -1456,8 +1450,8 @@ local function SSXE_fake_script() -- SorryForTheWait.Script
 	
 	script.Parent.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(SSXE_fake_script)()
-local function OQYISB_fake_script() -- DiningIn.Script 
+coroutine.wrap(GIDOU_fake_script)()
+local function QNRWCM_fake_script() -- DiningIn.Script 
 	local script = Instance.new('Script', DiningIn)
 
 	DiningInButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.DiningIn
@@ -1478,8 +1472,8 @@ local function OQYISB_fake_script() -- DiningIn.Script
 	
 	DiningInButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(OQYISB_fake_script)()
-local function WFUBGYH_fake_script() -- TakeOut.Script 
+coroutine.wrap(QNRWCM_fake_script)()
+local function OKKK_fake_script() -- TakeOut.Script 
 	local script = Instance.new('Script', TakeOut)
 
 	TakeOutButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.TakeOut
@@ -1501,8 +1495,8 @@ local function WFUBGYH_fake_script() -- TakeOut.Script
 	
 	TakeOutButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(WFUBGYH_fake_script)()
-local function YWCWZSQ_fake_script() -- Notepad.Script 
+coroutine.wrap(OKKK_fake_script)()
+local function LKDCEQS_fake_script() -- Notepad.Script 
 	local script = Instance.new('Script', Notepad)
 
 	NotepadButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.Notepad
@@ -1523,8 +1517,8 @@ local function YWCWZSQ_fake_script() -- Notepad.Script
 	
 	NotepadButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(YWCWZSQ_fake_script)()
-local function REFINNL_fake_script() -- Options.Script 
+coroutine.wrap(LKDCEQS_fake_script)()
+local function EGSEY_fake_script() -- Options.Script 
 	local script = Instance.new('Script', Options)
 
 	OptionsButton = game.Players.Nikayah3729.PlayerGui.UserInterface.SidebarFrames.Codes.Main.Tabs.Options
@@ -1545,4 +1539,4 @@ local function REFINNL_fake_script() -- Options.Script
 	
 	OptionsButton.MouseButton1Click:Connect(lclick)
 end
-coroutine.wrap(REFINNL_fake_script)()
+coroutine.wrap(EGSEY_fake_script)()
